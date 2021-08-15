@@ -1,0 +1,228 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: linear-gradient(
+    to right,
+    #f099cb,
+    #e09bd6,
+    #ce9edf,
+    #baa2e5,
+    #a4a5e8,
+    #92aef1,
+    #7eb7f6,
+    #69bff8,
+    #52cffe,
+    #41dfff,
+    #46eefa,
+    #5ffbf1
+  );
+  color: white;
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+}
+.container {
+  display: flex;
+}
+.container h2 {
+  margin: 0 0 30px;
+  text-align: center;
+}
+
+header {
+  font-size: 2rem;
+}
+
+header,
+form {
+  min-height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+form input,
+form button {
+  padding: 0.5rem;
+  font-size: 2rem;
+  border: none;
+  background: white;
+}
+form button {
+  color: #00ff3a;
+  background: #f7fffe;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+form button:hover {
+  background: #1ee74d;
+  color: white;
+}
+.todo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.todo-list {
+  min-width: 30%;
+  list-style: none;
+}
+
+.todo {
+  margin: 0.5rem;
+  background: white;
+  font-size: 1.5rem;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 1s ease;
+}
+.filter-todo {
+  padding: 1rem;
+}
+.todo li {
+  flex: 1;
+}
+
+.trash-btn,
+.complete-btn {
+  background: #ff3434;
+  color: white;
+  border: none;
+  padding: 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+}
+.complete-btn {
+  background: rgb(11, 212, 162);
+}
+.todo-item {
+  padding: 0rem 0.5rem;
+}
+
+.fa-trash,
+.fa-check {
+  pointer-events: none;
+}
+
+.fall {
+  transform: translateY(10rem) rotateZ(20deg);
+  opacity: 0;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+/*CUSTOM SELECTOR */
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  outline: 0;
+  box-shadow: none;
+  border: 0 !important;
+  background-image: none;
+}
+
+/* Custom Select */
+.select {
+  margin: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+select {
+  color: #ff6f47;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+  width: 12rem;
+}
+/* Arrow */
+.select::after {
+  content: "\25BC";
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 1rem;
+  background: #00ff3a;
+  cursor: pointer;
+  pointer-events: none;
+}
+/* Transition */
+/*
+  .select:hover::after {
+    transform: scale(1.5);
+  }
+  */
+footer {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  left: 0;
+  right: 0;
+}
+
+/* Covid Tab Style*/
+#trackingTab {
+  margin-right: 50px;
+}
+img#flag {
+  height: 20px;
+  width: 20px;
+}
+.card {
+  width: 84%;
+  height: 80px;
+  background: #ccc;
+  padding: 8%;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  color: #fff;
+  margin-left: 10px;
+}
+.card.a {
+  background: #41a7ff;
+}
+.card.cr {
+  background: #ff3434;
+}
+.card.r {
+  background: #32b336;
+}
+.card.ca {
+  background: #d83f3f;
+}
+.card.d {
+  background: #ff0053;
+}
+.card.t {
+  background: #ffa501;
+}
+.card h5 {
+  margin: 0;
+  font-size: 15px;
+  /* margin-top: -30px; */
+}
+.card span {
+  /* margin-top: -30px; */
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 4px;
+}
+/* .card i {
+    margin-top: -250px;
+  font-size: 15px;
+} */
+
+/* Tool Tab */
+.tool {
+  float: right;
+}
+.todo > card {
+  background: #ffa501;
+}

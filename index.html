@@ -1,13 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Codding Challenge</title>
-    
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Covice</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+      integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <h1 style="font-weight: bold">Covice List</h1>
+    </header>
+
+    <div class="container">
+      <div class="trackingtab" style="margin-right: 50px">
+        <h3 style="margin-bottom: 20px">
+          COVID -19 Cases in <span id="country"></span>
+        </h3>
+        <div class="card a">
+          <!-- <i class="fa fa-tachometer" style="  margin-top: -60px;color: red"></i> -->
+          <h5>Active Cases</h5>
+          <span id="active"></span>
+        </div>
+        <div class="card ca">
+          <!-- <i class="fa fa-th-list"></i> -->
+          <h5>Total Cases</h5>
+          <span id="cases"></span>
+        </div>
+        <div class="card cr">
+          <!-- <i class="fa fa-times-circle"></i> -->
+          <h5>Critical Cases</h5>
+          <span id="critical"></span>
+        </div>
+        <div class="card d">
+          <!-- <i class="fa fa-times"></i> -->
+          <h5>Total Deaths</h5>
+          <span id="death"></span>
+        </div>
+        <div class="card r">
+          <!-- <i class="fa fa-check-square-o"></i> -->
+          <h5>Recovered Cases</h5>
+          <span id="recovered"></span>
+        </div>
+      </div>
+      <div style="width: 70%">
+        <form>
+          <input type="text" class="todo-input" />
+          <button class="todo-button" type="submit">
+            <i class="fas fa-plus-square"></i>
+          </button>
+          <div class="select">
+            <select name="todos" class="filter-todo">
+              <option value="all">All</option>
+              <option value="completed">Completed</option>
+              <option value="uncompleted">Uncompleted</option>
+            </select>
+          </div>
+        </form>
+        <div class="todo-container">
+          <ul class="todo-list"></ul>
+        </div>
+      </div>
+      <div class="tool">
+        <h3 style="margin-bottom: 20px">Useful Tools</h3>
+        <div class="card info" style="background: #fd4343">
+          <a
+            href="http://"
+            style="
+              text-decoration: none;
+              color: white;
+              text-align: center;
+              font-size: 14px;
+            "
+            >Pomodoro</a
+          >
+
+          <!-- <span id="active">hekki</span> -->
+        </div>
+        <div class="card info" style="background: #05b0ff">
+          <a
+            href="https://rainymood.com/"
+            style="text-decoration: none; color: white; font-size: 14px"
+            >Rainymood</a
+          >
+          <!-- <span id="active">hekki</span> -->
+        </div>
+        <div class="card info" style="background: #49fd43">
+          <a href="http://" style="text-decoration: none; color: white"
+            >Bookself</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <footer class="copyright" style="margin-bottom: 20px">
+      &copy; Made by <a href="https://www.facebook.com/tieut15">Chinhcp</a> with
+      ❤
+    </footer>
+    <script src="./app.js"></script>
+  </body>
 </html>
